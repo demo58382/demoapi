@@ -14,7 +14,7 @@ public class LeadRestController {
     @Autowired
     private LeadRepository leadRepo;
 
-    @PostMapping("/post")
+    @PostMapping
     public LeadEntity post(@RequestBody LeadEntity lead){
         LeadEntity save = leadRepo.save(lead);
         return save;
